@@ -74,6 +74,47 @@
             margin-bottom: 4px;
             filter: brightness(0) invert(1);
         }
+                .stories-container {
+            display: flex;
+            padding: 10px;
+            overflow-x: auto;
+            white-space: nowrap;
+            background: #ffffff;
+        }
+        .story {
+            width: 60px;
+            height: 60px;
+            border-radius: 12px;
+            margin-right: 10px;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            flex-shrink: 0;
+        }
+        .story img {
+            width: 100%;
+            height: 100%;
+            border-radius: 12px;
+            object-fit: cover;
+        }
+        .full-screen {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            align-items: center;
+            justify-content: center;
+        }
+        .full-screen img {
+            max-width: 90%;
+            max-height: 90%;
+            border-radius: 12px;
+        }
     </style>
     <script>
         function openStory(src) {
